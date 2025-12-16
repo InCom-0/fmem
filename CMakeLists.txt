@@ -2,7 +2,7 @@
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the LICENSE file distributed with Mimick.
 
-cmake_minimum_required (VERSION 2.8.12)
+cmake_minimum_required (VERSION 3.30...4.0)
 
 option(BUILD_SHARED_LIBS "Build shared library." OFF)
 # Add an option to control whether to build static or shared library
