@@ -27,11 +27,6 @@ list (APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/.cmake")
 if(MSVC AND NOT BUILD_SHARED_LIBS)
   add_compile_options(/EHsc)
   # See https://gitlab.kitware.com/cmake/cmake/-/issues/18390
-  add_compile_options(
-          $<$<CONFIG:>:/MT>
-          $<$<CONFIG:Debug>:/MTd>
-          $<$<CONFIG:Release>:/MT>
-  )
 endif(MSVC AND NOT BUILD_SHARED_LIBS)
 if(BUILD_SHARED_LIBS)
   set(CMAKE_POSITION_INDEPENDENT_CODE ON)
